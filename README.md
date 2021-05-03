@@ -2,4 +2,4 @@
 
 
 ## Surprise Minimization
-Minimize $-ln p(o)$
+Minimize _-ln p(o)_
