@@ -19,4 +19,9 @@ Exploring and exploiting are here just two aspects of expected free energy, and 
 
 _G(pi) = KL[ q(o|pi) || p(o) ] + E_q(s|pi)[ H[ p(o|s) ]]_
 
-The
+The expected free energy as a function of the policies (_pi_) is here written in terms of 
+1) Risk/Expected complexity/beliefs about probability for reward. That is, the lower the KL, the higher the changes of attaining rewarding outcomes under that policy.
+2) Expected value of the entropy of the likelihood function, with _H(p(o|s)) = SUM[ p(p|s) ln[p(o|s)] ]_. A higher-entropy likelihood means there are less precise predictions about outcomes given beliefs about the possible states of the world. This term is commonly refrered to as the measure of ambiguity (or expected inaccuracy). Policies that minimize ambiguity will try to occupy states that are expected to generate the most precise (i.e. most informative) observations. 
+Putting the risk and ambiguity terms together means that minimizing EFE will drive selection of policies that maximize both reward and information gain.
+
+Note also that EFE entails stronger (more precise) preferences for one outcome over others will have the effect of down-weighting the value of information, leading to reduced information seeking.
