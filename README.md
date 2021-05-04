@@ -17,4 +17,6 @@ _VFE_ serves as an approximation to the marginal likelihood _p(o)_, functioning 
 ## Exploration-exploitation
 Exploring and exploiting are here just two aspects of expected free energy, and which behavior is favored in a given situation depends on current levels of uncetainty and the level of expected reward. This behaviour, i.e. a posterior over policies, is informed by both _VFE_ and _EFE_. These quantities respectively furnish retrospective and prospective action policy evaluations.
 
-_G(pi) = KL[q(o|pi) || p(o)] + E_q(s|pi)[H[p(o|s)]]_
+_G(pi) = KL[ q(o|pi) || p(o) ] + E_q(s|pi)[ H[ p(o|s) ]]_
+
+The
