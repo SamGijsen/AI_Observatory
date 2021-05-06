@@ -31,6 +31,12 @@ If there are no habits, lower $`\gamma_`$ values lead to more randomness in poli
 In case of deep policies, this parameter is updated after each observation based on whether _F(pi)_ and _G(pi)_ increase or decrease, leading to reduced or increased expected precision values, respectively. In shallow parameters the prior is used for each timestep (with a depth of 1).
 
 
+$`\gamma_`$ 
+
+$gamma$
+$\gamma$
+`$\gamma$`
+
 ```math
 a^2+b^2=c^2
 ```
