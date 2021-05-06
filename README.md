@@ -25,3 +25,8 @@ The expected free energy as a function of the policies (_pi_) is here written in
 Putting the risk and ambiguity terms together means that minimizing EFE will drive selection of policies that maximize both reward and information gain.
 
 Note also that EFE entails stronger (more precise) preferences for one outcome over others will have the effect of down-weighting the value of information, leading to reduced information seeking.
+
+### Expected free energy precision
+If there are no habits, lower $`\Gamma_`$ values lead to more randomness in policy selection. In case of strong habits, lower values increase how much habits influence policy selection, because the influence of G is reduced relative to E. (See: _pi = sigma(ln E - F - \Gamma G))_
+In case of deep policies, this parameter is updated after each observation based on whether _F(pi)_ and _G(pi)_ increase or decrease, leading to reduced or increased expected precision values, respectively. In shallow parameters the prior is used for each timestep (with a depth of 1).
+
