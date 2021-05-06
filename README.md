@@ -30,3 +30,7 @@ Note also that EFE entails stronger (more precise) preferences for one outcome o
 If there are no habits, lower $`\Gamma_`$ values lead to more randomness in policy selection. In case of strong habits, lower values increase how much habits influence policy selection, because the influence of G is reduced relative to E. (See: _pi = sigma(ln E - F - \Gamma G))_
 In case of deep policies, this parameter is updated after each observation based on whether _F(pi)_ and _G(pi)_ increase or decrease, leading to reduced or increased expected precision values, respectively. In shallow parameters the prior is used for each timestep (with a depth of 1).
 
+
+```math
+a^2+b^2=c^2
+```
