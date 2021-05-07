@@ -26,9 +26,13 @@ Putting the risk and ambiguity terms together means that minimizing EFE will dri
 
 Note also that EFE entails stronger (more precise) preferences for one outcome over others will have the effect of down-weighting the value of information, leading to reduced information seeking.
 
-### Expected free energy precision
-If there are no habits, lower _\Gamma_ values lead to more randomness in policy selection. In case of strong habits, lower values increase how much habits influence policy selection, because the influence of G is reduced relative to E. (See: _pi = sigma(ln E - F - \Gamma G))_
-In case of deep policies, this parameter is updated after each observation based on whether _F(pi)_ and _G(pi)_ increase or decrease, leading to reduced or increased expected precision values, respectively. In shallow parameters the prior is used for each timestep (with a depth of 1).
+_\Gamma_ (scalar) modulates the degree to which G controls policy selection. It encodes a prior belief about the confidence with which policies can be inferred (i.e., how reliable beliefs about the best policy are expected to be. It may be tought of as an expected free energy (G) precision. If no habits are present, lower _\Gamma_ values lead to more randomness in policy selection, while higher values increase the influence of habits on policy selection. At higher values, the agent is more confident that 
 
+## Implementation
+1) Variational message passing (mean-field approximation)
+2) Belief propagation (Bethe)
+3) Marginal message passing (compromise between efficiency of 1) and accuracy of 2))
 
-
+Information  gain vs Log prior preferences / reward / utility
+EFE: natural units for both intrinsic and extrinsic value
+Knob on expected complexity vs expected accuracy or ambiguity
