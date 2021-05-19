@@ -40,6 +40,8 @@ Knob on expected complexity vs expected accuracy or ambiguity
 ## Prediction errors
 #### State prediction errors
 These track how _F(pi)_ changes over time as beliefs about states _s(pi,tau)_ are updated (i.e., reductions in F correspond to reductions in state prediction error.
+
 (0.5 * B_backwards * B_forwards) + A*o_t - s
 
 #### Outcome prediction errors
+These track how _G(pi)_ changes over time as beliefs about policies are updated (i.e., reductions in G correspond to reductions in outcome prediction error). That is to say, when this type of PE is minimized, policies are identified that minimize the expected difference between predicted and preferred outcomes (and minimize ambiguity, which maximizes information gain).
