@@ -36,3 +36,10 @@ _\Gamma_ (scalar) modulates the degree to which G controls policy selection. It 
 Information  gain vs Log prior preferences / reward / utility
 EFE: natural units for both intrinsic and extrinsic value
 Knob on expected complexity vs expected accuracy or ambiguity
+
+## Prediction errors
+#### State prediction errors
+These track how _F(pi)_ changes over time as beliefs about states _s(pi,tau)_ are updated (i.e., reductions in F correspond to reductions in state prediction error.
+(0.5 * B_backwards * B_forwards) + A*o_t - s
+
+#### Outcome prediction errors
