@@ -54,3 +54,5 @@ Using spm_softmax(vector), the larger (more positive) elements will yield larger
 
 ## Study ideas
 It is easy to end up with trials in which information gain and prior preferences are equal; do subjects actually maintain an equal selection probability over policies?
+
+![afbeelding](https://user-images.githubusercontent.com/44772298/119142458-cfb2a300-ba46-11eb-8c6d-d94d370fdf7c.png)
