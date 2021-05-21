@@ -45,3 +45,12 @@ These track how _F(pi)_ changes over time as beliefs about states _s(pi,tau)_ ar
 
 #### Outcome prediction errors
 These track how _G(pi)_ changes over time as beliefs about policies are updated (i.e., reductions in G correspond to reductions in outcome prediction error). That is to say, when this type of PE is minimized, policies are identified that minimize the expected difference between predicted and preferred outcomes (and minimize ambiguity, which maximizes information gain).
+
+
+## Questions
+
+#### Why does a-novelty seem added instead of subtracted from G?
+Using spm_softmax(vector), the larger (more positive) elements will yield larger probabilities. For G, we are computing state information gain, 'a' information gain, and prior preferences. Under this formulation, each term contributes positively to policy selection, and thus the more these terms positively contribute to G(k), the more likely policy k is to be selected. For prior preferences, this means the less negative the better, and for 'a'-information gain, the more positive the better.
+
+## Study ideas
+It is easy to end up with trials in which information gain and prior preferences are equal; do subjects actually maintain an equal selection probability over policies?
